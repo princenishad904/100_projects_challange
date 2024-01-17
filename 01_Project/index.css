@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* background-color: rgb(70, 69, 69);
+  color: white; */
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  position: relative;
+}
+.fa-bell {
+  font-size: 80px;
+}
+
+.btn {
+  width: 120px;
+  padding: 4px 12px;
+  border-radius: 50px;
+  outline: none;
+  border: 1px solid gray;
+  cursor: pointer;
+  margin: 36px 0px;
+  font-size: 1.1rem;
+  box-shadow: 1px 2px 25px #0000003d;
+}
+.container .notify::before {
+  content: attr(data-count);
+  position: absolute;
+  top: 0;
+  right: -3px;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: rgb(233, 16, 16);
+  opacity: 0;
+  color: #fff;
+}
+.notify.add-numb::before {
+  opacity: 1;
+}
