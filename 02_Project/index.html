@@ -11,15 +11,35 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Notification Button</title>
+    <title>login</title>
   </head>
   <body>
     <div class="container">
       <div class="wrapper">
-        <div class="notify"></div>
-        <i class="fa-regular fa-bell"></i>
+        <h3>Login</h3>
+        <form>
+          <div class="box">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="username/email" />
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="password" placeholder="Password" />
+            <i id="hideAndShow" class="fa-solid fa-eye"></i>
+          </div>
+
+          <span class="frgtPassword">Forget Password ?</span>
+
+          <input type="button" value="Login" />
+
+          <div class="otherOption">
+            <span></span>
+            <p>Or</p>
+            <span></span>
+          </div>
+          <p class="signUp">Not yet account ? <a href=""> Sign Up</a></p>
+        </form>
       </div>
-      <button class="btn">Notify me</button>
     </div>
     <script src="index.js"></script>
   </body>
